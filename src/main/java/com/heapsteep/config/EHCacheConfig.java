@@ -19,10 +19,10 @@ import java.time.Duration;
 
 @Configuration
 @EnableCaching
-public class MyConfigEHcache {
+public class MyConfig_EHcache {
 
     @Bean
-    public CacheManager EhcacheManager() {
+    public CacheManager myCacheManager() {
 
         CacheConfiguration<String, Person> cachecConfig = CacheConfigurationBuilder
                 .newCacheConfigurationBuilder(String.class,
